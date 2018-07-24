@@ -1,3 +1,7 @@
+/**
+ * Shawn Jin, 2018/7/24
+ */
+
 public class LeetCode832 {
 //    private int[][] test1 = new int[][]([[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]);
     public static void main(String[] arg){
