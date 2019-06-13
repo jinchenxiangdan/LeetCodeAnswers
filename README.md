@@ -5,4 +5,4 @@ However, **The answers in this res may NOT the easiest answers**, if you know ea
 
 Thanks
 ## TODO
-classify question by resulting methods
+classify question by resolving methods
