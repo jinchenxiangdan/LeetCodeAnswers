@@ -6,9 +6,10 @@ Memory Usage: 38.1 MB, less than 99.68% of Java online submissions for N-Repeate
 class LeetCode961{
     public int repeatedNTimes(int[] A) {
         // precondition: unique elements and range is [0, 10000]
+        int n = A.length/2;
         int[] count = new int[10000];
         for (int a : A)
-            if (count[a]++ == 1)
+            if (++count[a] == n)
                 return a;
         return -1;
         
