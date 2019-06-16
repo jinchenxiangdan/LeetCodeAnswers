@@ -6,12 +6,23 @@
  *     ListNode(int x) { val = x; }
  * }
  */
+ 
+ 
+/* 
+Runtime: 2 ms, faster than 92.07% of Java online submissions for Add Two Numbers.
+Memory Usage: 44.3 MB, less than 89.01% of Java online submissions for Add Two Numbers.
+*/
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         
+	// Create initial head node
         ListNode L3 = new ListNode(-1);
+		// Keep a reference to the start of the LL
 		ListNode pointer = L3;
+		// Keep track of carry, initially zero
 		int carry = 0;
+		
+		// While there are numbers to add together
 		while (l1 != null && l2 != null) {
 			
 			int addNums = l1.val + l2.val;
