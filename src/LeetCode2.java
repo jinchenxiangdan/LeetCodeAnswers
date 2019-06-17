@@ -103,3 +103,33 @@ class Solution {
         return pointer;
     }
 }
+
+// below is easier version of this problem
+/**
+Author: Shawn Jin
+Runtime: 2 ms, faster than 91.81% of Java online submissions for Add Two Numbers.
+Memory Usage: 44.4 MB, less than 88.47% of Java online submissions for Add Two Numbers.
+*/
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode preNode = new ListNode(0);
+        ListNode head = preNode;
+        int carry = 0, answer = 0;
+        while (l1 != null || l2 != null || carry == 1) {
+            answer = (l1 == null? 0: l1.val) + (l2 == null? 0 : l2.val) + carry;
+            if (answer > 9) {
+                answer -= 10;
+                carry = 1;
+            } else {
+                carry = 0;
+            }
+            ListNode node = new ListNode(answer);
+            preNode.next = node;
+            preNode = node;
+            if (l1 != null)
+                l1 = l1.next;
+            if (l2 != null)
+                l2 = l2.next;
+        }
+        return head.next;
+    }
+
