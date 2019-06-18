@@ -7,7 +7,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class LeetCode1008 {
     public TreeNode bstFromPreorder(int[] preorder) {
         		
 		TreeNode root = new TreeNode(preorder[0]);
