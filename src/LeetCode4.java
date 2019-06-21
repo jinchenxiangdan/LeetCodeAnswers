@@ -8,7 +8,6 @@ class LeetCode4 {
     */
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int[] answer = new int[nums1.length + nums2.length];
-        // int length = nums1.length < nums2.length ? nums1.length : nums2.length;
         int nums1Pos = 0, nums2Pos = 0;
         for (int i = 0; i < nums1.length+nums2.length; i++) {
             if (nums1Pos >= nums1.length) {
