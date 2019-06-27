@@ -28,4 +28,31 @@ class LeetCode890 {
         
         return info;
     }
+    
+    
+    /**
+    Author:  Github user: narendrakumar
+    Runtime: 1 ms, faster than 96.35% of Java online submissions for Find and Replace Pattern.
+    Memory Usage: 36.3 MB, less than 98.70% of Java online submissions for Find and Replace Pattern.
+    */
+    private boolean util(String a, String b) {
+        HashMap<Character, Integer> map1 = new HashMap<>();
+        HashMap<Character, Integer> map2 = new HashMap<>();
+        for(int i=0; i<a.length(); i++) {
+            if(map1.put(a.charAt(i), i) != map2.put(b.charAt(i), i)) return false;    
+        }
+        return true;
+    }
+    
+    public List<String> findAndReplacePattern(String[] words, String pattern) {
+        List<String> result = new ArrayList<>();
+        for(String word: words) {
+            if(word.length() != pattern.length()) continue;
+            if(util(pattern,word)){
+                result.add(word);
+            }
+        }
+        return result;
+    }
+
 }
