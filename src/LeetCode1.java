@@ -16,6 +16,27 @@ class LeetCode1 {
         throw new IllegalArgumentException();
 	}
 
+	/**
+	 * This method is the best solution, running in O(n) times
+	 * @param  nums   [description]
+	 * @param  target [description]
+	 * @return        [description]
+	 */
+	public static int[] twoSum2(int[] nums, int target) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i < nums.length; i++) {
+            int difference = target - nums[i];
+            if (map.containsKey(difference) && map.get(difference) != i) {
+                return new int[] { i, map.get(difference)};
+            }
+        }
+    
+        throw new IllegalArgumentException();
+    }
+
 
 
 
