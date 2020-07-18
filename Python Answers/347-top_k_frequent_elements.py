@@ -1,6 +1,8 @@
 '''
 Author: Shawn Jin
 '''
+import collections
+from typing import List 
 
 class Solution:
     '''
@@ -22,4 +24,4 @@ class Solution:
     Memory Usage: 18.4 MB, less than 24.68% of Python3 online submissions for Top K Frequent Elements.
     '''
     def topKFrequent_oneLine(self, nums: List[int], k: int) -> List[int]:
-        return [x for x,_ in sorted(Counter(nums).items(), key=lambda x:-x[1])[:k]]
+        return [x for x,_ in sorted(collections.Counter(nums).items(), key=lambda x:-x[1])[:k]]
