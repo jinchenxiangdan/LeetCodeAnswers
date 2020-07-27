@@ -1,8 +1,8 @@
 from typing import List
 '''
 Author: Shawn Jin
-Runtime: 52 ms, faster than 85.87% of Python3 online submissions for Find Minimum in Rotated Sorted Array II.
-Memory Usage: 14.3 MB, less than 34.16% of Python3 online submissions for Find Minimum in Rotated Sorted Array II.
+Runtime: 48 ms, faster than 95.32% of Python3 online submissions for Find Minimum in Rotated Sorted Array II.
+Memory Usage: 14.2 MB, less than 82.75% of Python3 online submissions for Find Minimum in Rotated Sorted Array II.
 '''
 class Solution:
     def findMin(self, nums: List[int]) -> int:
