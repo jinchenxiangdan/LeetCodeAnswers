@@ -30,7 +30,4 @@ def a_function(strs):
 
 if __name__ == "__main__":
     # print('d:', a_function(['abc','bcd','cde']))
-    pass 
-
-
-
+    pass

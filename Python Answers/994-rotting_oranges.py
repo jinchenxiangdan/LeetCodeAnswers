@@ -12,9 +12,5 @@ class Solution:
         return timer
     
 
-
-
-
-
 if __name__ == "__main__":
     in_ = [[2,1,1],[1,1,0],[0,1,1]]
