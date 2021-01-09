@@ -1,8 +1,8 @@
 #!/usr/bin/python3 
 # Importing the 'cgi' module 
 import cgi 
-
-
+  
+  
 print("Content-type: text/html\r\n\r\n") 
 print("<html><body>") 
 print("<h1> Hello Program! </h1>") 
@@ -21,7 +21,7 @@ if form.getvalue("sad"):
 print("<form method='post' action='hello2.py'>") 
 print("<p>Name: <input type='text' name='name' /></p>") 
 print("<input type='checkbox' name='happy' /> Happy") 
-print("<input type='checkbox' name='sad' /> Sad") 
+# print("<input type='checkbox' name='sad' /> Sad") 
 print("<input type='submit' value='Submit' />") 
 print("</form") 
 print("</body></html>")
